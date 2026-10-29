@@ -1,0 +1,15 @@
+.git
+.gitignore
+.env
+.envrc
+venv
+.venv
+__pycache__
+*.pyc
+.DS_Store
+*.md
+data
+class_dataset.csv
+load_data.py
+query_db.py
+schema.sql
