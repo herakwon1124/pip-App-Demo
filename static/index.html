@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class roster</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <p class="eyebrow">Projects in AI</p>
+        <h1>Class roster</h1>
+        <p class="lede">
+          Names of students in this class, loaded live from the database.
+        </p>
+      </header>
+
+      <section class="toolbar" aria-label="Roster controls">
+        <label class="search">
+          <span class="search-label">Search names</span>
+          <input
+            id="search"
+            type="search"
+            placeholder="Type a name…"
+            autocomplete="off"
+          />
+        </label>
+        <p id="status" class="status" aria-live="polite">Loading roster…</p>
+      </section>
+
+      <section aria-labelledby="roster-heading">
+        <h2 id="roster-heading" class="visually-hidden">Student names</h2>
+        <ul id="roster" class="roster"></ul>
+        <p id="empty" class="empty hidden">No names match that search.</p>
+        <p id="error" class="error hidden"></p>
+      </section>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
